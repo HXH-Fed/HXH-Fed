@@ -1,0 +1,344 @@
+.wjs_header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  color: #000;
+}
+.wjs_header .row {
+  position: relative;
+}
+.wjs_header .row > div {
+  text-align: center;
+}
+.wjs_header .row > div a {
+  color: #666;
+  text-decoration: none;
+}
+.wjs_header .row > div:nth-of-type(-n+3) {
+  border-right: 1px solid #ccc;
+}
+.wjs_header .row > div:first-child .code {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #000;
+}
+.wjs_header .row > div:first-child .code > img {
+  display: none;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 49px;
+  left: 50%;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 999;
+}
+.wjs_header .row > div:first-child .code:hover > img {
+  display: block;
+}
+.wjs_header .row .btn-danger {
+  padding: 3px 15px;
+  text-align: center;
+  font-size: 14px;
+  background-color: red;
+}
+.wjs_header .row .btn-link {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+.wjs_nav {
+  margin-bottom: 0;
+}
+.wjs_nav .navbar-nav > li > a {
+  height: 80px;
+  line-height: 50px;
+  font-size: 16px;
+  color: #000;
+}
+.wjs_nav .navbar-nav > li > a:hover,
+.wjs_nav .navbar-nav > li a:focus {
+  border-bottom: 3px solid red;
+}
+.wjs_nav .navbar-nav > .active > a,
+.wjs_nav .navbar-nav > .active a:hover,
+.wjs_nav .navbar-nav > .active a:focus {
+  background-color: transparent;
+  border-bottom: 3px solid red;
+}
+.wjs_nav .navbar-header {
+  height: 80px;
+}
+.wjs_nav .navbar-toggle {
+  margin-top: 23px;
+}
+.wjs_nav .navbar-brand {
+  font-size: 40px;
+  line-height: 50px;
+}
+.wjs_nav .navbar-brand .wjs_icon_logo {
+  color: red;
+}
+.wjs_nav .navbar-brand .wjs_icon_text {
+  color: #000;
+}
+.main .slideshow .carousel .carousel-inner .pcImg {
+  width: 100%;
+  height: 390px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+.main .slideshow .carousel .carousel-inner .mobileImg {
+  width: 100%;
+  display: block;
+}
+.main .information .container .row {
+  padding: 40px 0;
+}
+.main .information .container .row a {
+  text-decoration: none;
+  color: #000;
+}
+.main .information .container .row .wjs_icon {
+  font-size: 30px;
+}
+.main .information .container .row a:hover {
+  color: red;
+}
+.main .bookingModule {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.main .bookingModule .container .row div {
+  padding: 20px 0;
+}
+.main .bookingModule .container .row .wjs_icon {
+  color: #000;
+  font-size: 16px;
+}
+.main .bookingModule .container .row > div:nth-of-type(1) a:nth-last-child(1) {
+  text-decoration: none;
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.main .bookingModule .container .row a {
+  text-decoration: none;
+  color: #000;
+}
+.main .bookingModule .container .row a:hover {
+  color: red;
+}
+.main .product {
+  background-color: #eee;
+}
+.main .product .container .product_tabs {
+  padding: 20px 0;
+}
+.main .product .container .product_tabs > ul > li {
+  height: 80px;
+  padding: 0 15px;
+}
+.main .product .container .product_tabs > ul > li > a {
+  font-size: 16px;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  line-height: 57px;
+}
+.main .product .container .product_tabs > ul > li.active a,
+.main .product .container .product_tabs > ul > li.active a:hover,
+.main .product .container .product_tabs > ul > li.active a:focus {
+  border-bottom: 3px solid red;
+}
+.main .product .container .product_tabs > ul > li:hover {
+  border-bottom: 3px solid red;
+}
+.main .product .container .message_box {
+  height: 150px;
+  display: flex;
+  margin-top: 15px;
+  background-color: #fff;
+  color: #000;
+  position: relative;
+}
+.main .product .container .message_box > .left {
+  flex: 1;
+  border-right: 1px dashed #bbb;
+}
+.main .product .container .message_box > .left > h4 {
+  text-align: center;
+}
+.main .product .container .message_box > .left .message_main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 8px;
+}
+.main .product .container .message_box > .left .message_main > div {
+  width: 50%;
+}
+.main .product .container .message_box > .left .message_main > div > p {
+  margin-bottom: 5px;
+}
+.main .product .container .message_box > .left .message_main > div:nth-of-type(even) {
+  text-align: right;
+}
+.main .product .container .message_box > .right {
+  width: 100px;
+  text-align: center;
+  padding: 25px 0;
+  position: relative;
+}
+.main .product .container .message_box > .right > span {
+  color: red;
+}
+.main .product .container .message_box > .right > span:nth-of-type(1) {
+  font-size: 40px;
+  font-weight: bold;
+}
+.main .product .container .message_box > .right::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #eee;
+  border-radius: 50%;
+  left: -7px;
+  top: -7px;
+}
+.main .product .container .message_box > .right::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #eee;
+  border-radius: 50%;
+  left: -7px;
+  bottom: -7px;
+}
+.main .product .container .message_box > .right > .label {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  cursor: pointer;
+}
+.main .product .container .message_box > .right > .label > span:nth-of-type(1) {
+  color: red;
+  border: 1px solid red;
+}
+.main .product .container .message_box > .right > .label > span:nth-of-type(2) {
+  color: blue;
+  border: 1px solid blue;
+}
+.main .product .container .message_box.bgc_red {
+  background-color: red;
+  color: #fff;
+  position: relative;
+}
+.main .product .container .message_box.bgc_red > .left {
+  border-right: 1px dashed #fff;
+}
+.main .product .container .message_box.bgc_red > .right span {
+  color: #fff;
+}
+.main .product .container .message_box.bgc_red::before {
+  content: '\e915';
+  font-family: wjs;
+  font-size: 30px;
+  position: absolute;
+  top: -6px;
+}
+.news {
+  margin-top: 20px;
+}
+.news .row .newsTitle {
+  text-align: center;
+  line-height: 65px;
+  font-size: 30px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.news .row .newsTitle::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: -5px;
+  right: -10px;
+  border: 1px solid #ccc;
+}
+.news .row .wjs_navTabs {
+  border-bottom: none;
+}
+.news .row .wjs_navTabs > li {
+  margin-bottom: 100px;
+}
+.news .row .wjs_navTabs > li > a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.news .row .wjs_navTabs > li > a > span {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.news .row .wjs_navTabs > li:hover > a {
+  background-color: red;
+}
+.news .row .wjs_navTabs > li.active > a,
+.news .row .wjs_navTabs > li.active a:hover,
+.news .row .wjs_navTabs > li.active a:focus {
+  background-color: red;
+  border: none;
+}
+.news .row .wjs_navTabs > li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .news .row .wjs_navTabs li {
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .news .row .wjs_navTabs li {
+    width: 25%;
+    margin: 30px 0;
+  }
+}
+.news .row .wjs_dashed {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-right: 1px dashed red;
+  left: 45px;
+}
+.news .row .wjs_newslist > li {
+  list-style: none;
+}
+.news .row .wjs_newslist > li > a {
+  color: #000;
+  font-size: 18px;
+  line-height: 60px;
+}
+.footer .wjs_partner > h3 {
+  text-align: center;
+}
+.footer .wjs_partner > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.footer .wjs_partner > ul > li {
+  font-size: 70px;
+  margin: 0 20px;
+}
+.footer .wjs_partner > ul > li > a {
+  text-decoration: none;
+  color: #000;
+}

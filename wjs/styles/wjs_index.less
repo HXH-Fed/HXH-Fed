@@ -1,0 +1,483 @@
+// 页面导航栏
+.wjs_header {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    color: #000;
+
+    .row {
+        position: relative;
+
+        >div {
+            text-align: center;
+
+            a {
+                color: #666;
+                text-decoration: none;
+            }
+        }
+
+        >div:nth-of-type(-n+3) {
+            border-right: 1px solid #ccc;
+
+        }
+
+        >div:first-child {
+            .code {
+                width: 100%;
+                height: 100%;
+                display: block;
+                color: #000;
+
+                >img {
+                    display: none;
+                    position: absolute;
+                    transform: translateX(-50%);
+                    top: 49px;
+                    left: 50%;
+                    border: 1px solid #ccc;
+                    border-top: none;
+                    z-index: 999;
+                }
+
+                &:hover {
+                    >img {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .btn-danger {
+            padding: 3px 15px;
+            text-align: center;
+            font-size: 14px;
+            background-color: red;
+        }
+
+        .btn-link {
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    }
+}
+
+//  pc 页面导航条
+.wjs_nav {
+    margin-bottom: 0;
+
+    .navbar-nav {
+        >li {
+            >a {
+                height: 80px;
+                line-height: 50px;
+                font-size: 16px;
+                color: #000;
+            }
+
+            >a:hover,
+            a:focus {
+                border-bottom: 3px solid red;
+            }
+        }
+
+        >.active {
+
+            >a,
+            a:hover,
+            a:focus {
+                background-color: transparent;
+                border-bottom: 3px solid red;
+            }
+        }
+    }
+
+    // 移动端导航条
+    .navbar-header {
+        height: 80px;
+    }
+
+    .navbar-toggle {
+        margin-top: 23px;
+    }
+
+    .navbar-brand {
+        font-size: 40px;
+        line-height: 50px;
+
+        .wjs_icon_logo {
+            color: red;
+        }
+
+        .wjs_icon_text {
+            color: #000;
+        }
+    }
+}
+
+// 页面主体内容
+.main {
+
+    // 页面轮播图
+    .slideshow {
+        .carousel {
+            .carousel-inner {
+
+                .pcImg {
+                    width: 100%;
+                    height: 390px;
+                    background-size: cover;
+                    background-position: center;
+                    display: block;
+                }
+
+                .mobileImg {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // 页面信息模块
+    .information {
+        .container {
+            .row {
+                padding: 40px 0;
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                .wjs_icon {
+                    font-size: 30px;
+                }
+
+                a:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    // 页面预约模块
+    .bookingModule {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+
+        .container {
+            .row {
+                div{
+                    padding: 20px 0;
+
+                }
+                .wjs_icon {
+                    color: #000;
+                    font-size: 16px;
+                    
+                }
+
+                >div:nth-of-type(1) {
+                    a:nth-last-child(1) {
+                        text-decoration: none;
+                        color: red;
+                        border-bottom: 1px dashed red;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                a:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+
+    // 页面产品模块
+    .product {
+        background-color: #eee;
+
+        .container {
+            .product_tabs {
+                padding: 20px 0;
+
+                >ul {
+                    >li {
+                        height: 80px;
+                        padding: 0 15px;
+
+                        >a {
+                            font-size: 16px;
+                            color: #000;
+                            background-color: transparent;
+                            border: none;
+                            line-height: 57px;
+
+                        }
+                    }
+
+                    >li.active {
+                        a,
+                        a:hover,
+                        a:focus {
+                            border-bottom: 3px solid red;
+                        }
+                    }
+
+                    >li:hover {
+                        border-bottom: 3px solid red;
+                    }
+                }
+            }
+
+            .message_box {
+                height: 150px;
+                display: flex;
+                margin-top: 15px;
+                background-color: #fff;
+                color: #000;
+                position: relative;
+
+                >.left {
+                    flex: 1;
+                    border-right: 1px dashed #bbb;
+
+                    >h4 {
+                        text-align: center;
+                    }
+
+                    .message_main {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0px 8px;
+
+                        >div {
+
+                            width: 50%;
+
+                            >p {
+                                margin-bottom: 5px;
+                            }
+                        }
+
+                        >div:nth-of-type(even) {
+                            text-align: right;
+                        }
+                    }
+
+                }
+
+                >.right {
+                    width: 100px;
+                    text-align: center;
+                    padding: 25px 0;
+                    position: relative;
+                    >span{
+                        color: red;
+                    }
+                    >span:nth-of-type(1) {       
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                        background-color: #eee;
+                        border-radius: 50%;
+                        left: -7px;
+                        top: -7px;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 14px;
+                        height: 14px;
+                        background-color: #eee;
+                        border-radius: 50%;
+                        left: -7px;
+                        bottom: -7px;
+                    }
+                    >.label{
+                        position: absolute;
+                        width: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        top:15px;
+                        cursor: pointer;
+
+                        >span:nth-of-type(1){
+                            color: red;
+                            border: 1px solid red;
+                        }
+                        >span:nth-of-type(2){
+                            color: blue;
+                            border: 1px solid blue;
+                        }
+                    }
+                }
+                &.bgc_red{
+                    background-color: red;
+                    color: #fff;
+                    position: relative;
+                    >.left{
+                        border-right: 1px dashed #fff;
+                    }
+                    >.right{
+                        span{
+                            color: #fff;
+                        }
+                    }
+                    &::before {
+                        content: '\e915';
+                        font-family: wjs;
+                        font-size: 30px;
+                        position: absolute;
+                        top: -6px;
+                    }
+                }
+            }  
+        }
+    }
+}
+
+
+// 页面新闻模块
+.news {
+    margin-top: 20px;
+
+    .row {
+        .newsTitle {
+            text-align: center;
+            line-height: 65px;
+            font-size: 30px;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                bottom: -5px;
+                right: -10px;
+                border: 1px solid #ccc;
+            }
+        }
+
+        .wjs_navTabs {
+            border-bottom: none;
+
+            >li {
+                margin-bottom: 100px;
+
+                >a {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    background-color: #ccc;
+
+                    >span {
+                        font-size: 30px;
+                        color: #fff;
+                        text-align: center;
+                    }
+                }
+
+                &:hover {
+                    >a {
+                        background-color: red;
+                    }
+                }
+
+                &.active {
+
+                    >a,
+                    a:hover,
+                    a:focus {
+                        background-color: red;
+                        border: none;
+                    }
+                }
+            }
+
+            >li:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
+
+            @media screen and (min-width:768px) and (max-width:992px) {
+                li {
+                    padding: 30px;
+                }
+            }
+
+            @media screen and (max-width:992px) {
+                li {
+                    width: 25%;
+                    margin: 30px 0;
+                }
+            }
+        }
+
+        .wjs_dashed {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            border-right: 1px dashed red;
+            left: 45px;
+
+        }
+
+        .wjs_newslist {
+            >li {
+                list-style: none;
+
+                >a {
+                    color: #000;
+                    font-size: 18px;
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+
+// 页面底部
+.footer {
+
+    // 页面合作伙伴模块
+    .wjs_partner {
+        >h3 {
+            text-align: center;
+        }
+
+        >ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+            >li {
+                font-size: 70px;
+                margin: 0 20px;
+
+                >a {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+
+    }
+}
